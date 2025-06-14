@@ -486,3 +486,58 @@ button:hover {
     justify-content: center;
   }
 }
+
+.burger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+}
+
+.mobile-nav {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 999;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-nav ul li {
+  border-bottom: 1px solid #eee;
+}
+
+.mobile-nav ul li a {
+  display: block;
+  padding: 15px;
+  color: #333;
+  text-decoration: none;
+}
+
+.mobile-nav ul li a:hover {
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .nav-left,
+  .nav-right {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    justify-self: end;
+  }
+
+  .site-header .container {
+    grid-template-columns: 1fr auto;
+  }
+}

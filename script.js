@@ -18,3 +18,10 @@ function revealOnScrollOnce() {
 
   window.addEventListener('scroll', revealOnScrollOnce);
   document.addEventListener('DOMContentLoaded', revealOnScrollOnce);
+
+    const burger = document.getElementById('burger');
+  const mobileNav = document.getElementById('mobileNav');
+
+  burger.addEventListener('click', () => {
+    mobileNav.style.display = mobileNav.style.display === 'block' ? 'none' : 'block';
+  });
