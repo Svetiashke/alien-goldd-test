@@ -1,0 +1,121 @@
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 30px;
+      background: #fff;
+      color: #111;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 16px;
+    }
+
+    .toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      font-size: 14px;
+      flex-wrap: wrap;
+    }
+
+    .toolbar-left,
+    .toolbar-right {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    .card {
+      width: 260px;
+      background: #fff;
+      border-radius: 16px;
+      padding: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .badge {
+      background: #b60060;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      margin: 12px 0;
+      align-self: flex-start;
+    }
+
+    .description {
+      font-size: 14px;
+      line-height: 1.4;
+      margin: 6px 0;
+      text-align: left;
+      align-self: flex-start;
+    }
+
+    .old-price {
+      text-decoration: line-through;
+      color: #888;
+      font-size: 14px;
+      margin-top: 4px;
+      align-self: flex-start;
+    }
+
+    .new-price {
+      font-size: 20px;
+      font-weight: 600;
+      align-self: flex-start;
+    }
+
+    .btn {
+      margin-top: 12px;
+      border: 1px solid #111;
+      background: transparent;
+      padding: 10px 20px;
+      border-radius: 12px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn:hover {
+      background-color: #111;
+      color: white;
+    }
+
+    select {
+      padding: 6px 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .products {
+        justify-content: center;
+      }
+
+      .card {
+        width: 90%;
+      }
+
+      .toolbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+    }

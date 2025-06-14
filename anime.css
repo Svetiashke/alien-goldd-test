@@ -1,0 +1,24 @@
+.product-card,
+.product,
+.section-title,
+.sale-section,
+.hero-content,
+.per h1,
+.per p,
+.top-sales{
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.product-card.active,
+.product.active,
+.section-title.active,
+.sale-section.active,
+.hero-content.active,
+.per h1.active,
+.per p.active,
+.top-sales.active{
+  opacity: 1;
+  transform: translateY(0);
+}
