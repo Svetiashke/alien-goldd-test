@@ -19,9 +19,11 @@ function revealOnScrollOnce() {
   window.addEventListener('scroll', revealOnScrollOnce);
   document.addEventListener('DOMContentLoaded', revealOnScrollOnce);
 
-    const burger = document.getElementById('burger');
-  const mobileNav = document.getElementById('mobileNav');
+const burger = document.getElementById('burger');
+const mobileNav = document.getElementById('mobileNav');
 
-  burger.addEventListener('click', () => {
-    mobileNav.style.display = mobileNav.style.display === 'block' ? 'none' : 'block';
-  });
+burger.addEventListener('click', () => {
+  mobileNav.classList.toggle('active');
+  burger.classList.toggle('fa-bars');
+  burger.classList.toggle('fa-times');
+});
