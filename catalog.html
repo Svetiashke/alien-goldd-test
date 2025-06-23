@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="sale-catalog-anime.css">
-    <link rel="stylesheet" href="sale-catalog.css">
+    <link rel="stylesheet" href="catalog.css">
      <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
      <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <title>Alien goldd - Акції</title>
+    <title>Alien goldd - Каталог</title>
 </head>
 <body>
                  <div class="top-bar">
@@ -21,7 +21,7 @@
   <ul>
     <li><a href="index.html">Головна</a></li>
     <li><a href="category.html">Категорії</a></li>
-    <li><a href="catalog.html">Товари</a></li>
+    <li><a href="#">Товари</a></li>
     <li><a href="sale-catalog.html">Акції</a></li>
     <li><a href="#">Про нас</a></li>
   </ul>
@@ -37,7 +37,7 @@
       <ul class="nav-list">
         <li><a href="index.html" class="active">Головна</a></li>
         <li><a href="category.html">Категорії</a></li>
-        <li><a href="catalog.html">Товари</a></li>
+        <li><a href="#">Товари</a></li>
         <li><a href="sale-catalog.html">Акції</a></li>
         <li><a href="#">Про нас</a></li>
       </ul>
@@ -52,7 +52,7 @@
   </div>
 </header>
   <main>
-  <h1 class="header">Акційні товари</h1>
+  <h1 class="header">Каталог</h1>
 <div class="toolbar">
   <div class="toolbar-left">
     <div class="filters" id="filters">Фільтри:</div>
@@ -64,8 +64,8 @@
           <b id="availability-count">0 вибрано</b>
           <span class="filter-reset">Скинути</span>
         </div>
-        <label><input type="checkbox"> В наявності (90)</label>
-        <label style="color:#ccc"><input type="checkbox" disabled> Не в наявності (0)</label>
+        <label><input type="checkbox"> В наявності (1369)</label>
+        <label style="color:#ccc"><input type="checkbox"> Не в наявності (200)</label>
       </div>
     </div>
 
@@ -94,22 +94,22 @@
       <option>Від дорогих до дешевих</option>
       <option>Від старого до нового</option>
       <option>Від нового до старого</option>
-      <p style="color: black;">90 товарів</p>
+      <p style="color: black;">1569 товарів</p>
     </select>
-          <p style="color: black;">90 товарів</p>
+          <p style="color: black;">1569 товарів</p>
   </div>
 </div>
 </div>
     <div class="mobile-filter-trigger" id="openFilters">
   <i class="fa-solid fa-sliders"></i>
   Відфільтрувати та відсортувати
-  <span style="margin-left: 20px;">90 товари</span>
+  <span style="margin-left: 5px;">1569 товари</span>
 </div>
 <div class="filter-overlay" id="filterOverlay"></div>
 
 <div class="filter-header global-header" id="filterHeader">
   <span>Відфільтрувати та відсортувати</span>
-  <p>90 товари</p>
+  <p>1569 товари</p>
     <i class="fa-solid fa-xmark" id="closeFilters"></i>
   </div>
 <div class="filter-modal" id="filterModal">
@@ -169,8 +169,8 @@
   </div>
 
   <div class="availability-options">
-    <label><input type="checkbox"> В наявності (90)</label>
-    <label style="color: #ccc"><input type="checkbox" disabled> Немає в наявності (0)</label>
+    <label><input type="checkbox"> В наявності (1369)</label>
+    <label style="color: black"><input type="checkbox"> Немає в наявності (200)</label>
   </div>
 
   <div class="mobile-filter-actions">
@@ -193,7 +193,6 @@
 <a class="card-a" href="item-card-design.html">
     <div class="card">
       <img class="card-img" src="img/item.jpg">        
-      <div class="badge">Розпродаж</div>
       <div class="description">Засіб для виведення плям <b>Dr. Beckmann</b> з килимів та диванів 650 мл</div>
       <div class="old-price">₴319.00 UAH</div>
       <div class="new-price">₴271.00 UAH</div>
@@ -226,7 +225,6 @@
 <a class="card-a" href="item-card-design.html">
     <div class="card">
       <img class="card-img" src="img/item.jpg">        
-      <div class="badge">Розпродаж</div>
       <div class="description">Засіб для виведення плям <b>Dr. Beckmann</b> з килимів та диванів 650 мл</div>
       <div class="old-price">₴319.00 UAH</div>
       <div class="new-price">₴271.00 UAH</div>
@@ -237,7 +235,7 @@
 <a class="card-a" href="item-card-design.html">
     <div class="card">
       <img class="card-img" src="img/item.jpg">        
-      <div class="badge">Розпродаж</div>
+      <div class="out-badge">Розпродано</div>
       <div class="description">Засіб для виведення плям <b>Dr. Beckmann</b> з килимів та диванів 650 мл</div>
       <div class="old-price">₴319.00 UAH</div>
       <div class="new-price">₴271.00 UAH</div>
@@ -248,7 +246,6 @@
 <a class="card-a" href="item-card-design.html">
     <div class="card">
       <img class="card-img" src="img/item.jpg">        
-      <div class="badge">Розпродаж</div>
       <div class="description">Засіб для виведення плям <b>Dr. Beckmann</b> з килимів та диванів 650 мл</div>
       <div class="old-price">₴319.00 UAH</div>
       <div class="new-price">₴271.00 UAH</div>
@@ -270,7 +267,6 @@
     <a class="card-a" href="item-card-design.html">
     <div class="card">
       <img class="card-img" src="img/item.jpg">        
-      <div class="badge">Розпродаж</div>
       <div class="description">Засіб для виведення плям <b>Dr. Beckmann</b> з килимів та диванів 650 мл</div>
       <div class="old-price">₴319.00 UAH</div>
       <div class="new-price">₴271.00 UAH</div>
@@ -292,7 +288,7 @@
 <a class="card-a" href="item-card-design.html">
     <div class="card">
       <img class="card-img" src="img/item.jpg">        
-      <div class="badge">Розпродаж</div>
+      <div class="out-badge">Розпродано</div>
       <div class="description">Засіб для виведення плям <b>Dr. Beckmann</b> з килимів та диванів 650 мл</div>
       <div class="old-price">₴319.00 UAH</div>
       <div class="new-price">₴271.00 UAH</div>
@@ -303,7 +299,6 @@
 <a class="card-a" href="item-card-design.html">
     <div class="card">
       <img class="card-img" src="img/item.jpg">        
-      <div class="badge">Розпродаж</div>
       <div class="description">Засіб для виведення плям <b>Dr. Beckmann</b> з килимів та диванів 650 мл</div>
       <div class="old-price">₴319.00 UAH</div>
       <div class="new-price">₴271.00 UAH</div>
@@ -314,7 +309,7 @@
 <a class="card-a" href="item-card-design.html">
     <div class="card">
       <img class="card-img" src="img/item.jpg">        
-      <div class="badge">Розпродаж</div>
+      <div class="out-badge">Розпродано</div>
       <div class="description">Засіб для виведення плям <b>Dr. Beckmann</b> з килимів та диванів 650 мл</div>
       <div class="old-price">₴319.00 UAH</div>
       <div class="new-price">₴271.00 UAH</div>
@@ -325,7 +320,6 @@
 <a class="card-a" href="item-card-design.html">
     <div class="card">
       <img class="card-img" src="img/item.jpg">        
-      <div class="badge">Розпродаж</div>
       <div class="description">Засіб для виведення плям <b>Dr. Beckmann</b> з килимів та диванів 650 мл</div>
       <div class="old-price">₴319.00 UAH</div>
       <div class="new-price">₴271.00 UAH</div>
@@ -336,7 +330,7 @@
 <a class="card-a" href="item-card-design.html">
     <div class="card">
       <img class="card-img" src="img/item.jpg">        
-      <div class="badge">Розпродаж</div>
+      <div class="out-badge">Розпродано</div>
       <div class="description">Засіб для виведення плям <b>Dr. Beckmann</b> з килимів та диванів 650 мл</div>
       <div class="old-price">₴319.00 UAH</div>
       <div class="new-price">₴271.00 UAH</div>
@@ -347,7 +341,6 @@
 <a class="card-a" href="item-card-design.html">
     <div class="card">
       <img class="card-img" src="img/item.jpg">        
-      <div class="badge">Розпродаж</div>
       <div class="description">Засіб для виведення плям <b>Dr. Beckmann</b> з килимів та диванів 650 мл</div>
       <div class="old-price">₴319.00 UAH</div>
       <div class="new-price">₴271.00 UAH</div>

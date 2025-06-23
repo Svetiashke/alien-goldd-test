@@ -8,42 +8,48 @@
      <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
      <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <title>Alien goldd</title>
+    <title>Alien goldd - Головна</title>
 </head>
-<body>
                  <div class="top-bar">
     Alien goldd - Твоя ідеальна косметика
   </div>
-<header class="site-header">
+<header class="site-header" id="site-header">
 <i class="burger fas fa-bars" id="burger"></i>
 <nav class="mobile-nav" id="mobileNav">
   <ul>
     <li><a href="index.html">Головна</a></li>
     <li><a href="category.html">Категорії</a></li>
-    <li><a href="#">Товари</a></li>
+    <li><a href="catalog.html">Товари</a></li>
     <li><a href="sale-catalog.html">Акції</a></li>
     <li><a href="#">Про нас</a></li>
   </ul>
+  <div class="mobile-footer">
+    <a href="https://www.instagram.com/alien.goldd/"><i class="fab fa-instagram" id="instagram"></i></a>
+    <a href="https://www.tiktok.com/@alien.goldd?is_from_webapp=1&sender_device=pc"><i class="fab fa-tiktok" id="tiktok"></i></a>
+  </div>
 </nav>
+
+<div class="mobile-nav-overlay" id="overlay"></div>
   <div class="container">
     <nav class="nav-left">
       <ul class="nav-list">
         <li><a href="index.html" class="active">Головна</a></li>
         <li><a href="category.html">Категорії</a></li>
-        <li><a href="#">Товари</a></li>
+        <li><a href="catalog.html">Товари</a></li>
         <li><a href="sale-catalog.html">Акції</a></li>
         <li><a href="#">Про нас</a></li>
       </ul>
     </nav>
     <div class="logo">
-      <a href="#"><img src="img/logo.png" alt="Лого" /></a>
+      <a href="index.html"><img src="img/logo.png" alt="Лого" /></a>
     </div>
     <nav class="nav-right">
-      <a href="#" class="icon-btn"><i class="fa-solid fa-magnifying-glass"></i></a>
-      <a href="#" class="icon-btn"><i class="fa-solid fa-bag-shopping"></i></a>
+      <a href="#" class="icon-btn"><i class="fa-solid fa-magnifying-glass" id="search"></i></a>
+      <a href="#" class="icon-btn"><i class="fa-solid fa-bag-shopping" id="cart"></i></a>
     </nav>
   </div>
 </header>
+<body>
     <main>
 <section class="hero-banner">
   <div class="hero-content">
@@ -187,10 +193,10 @@
   <section class="top-sales">
     <h2 class="section-title">Топ продаж</h2>
     <div class="products">
-      <div class="product">
+            <div class="product">
         <img src="/img/item.jpg" alt="Product 1">
         <p class="title">Набір для домашнього видалення зубного каменю</p>
-        <div class="price">₴1,200.00 UAH</div>
+        <div class="price">₴1200.00 UAH</div>
         <button>Додати в корзину</button>
       </div>
       <div class="product">
